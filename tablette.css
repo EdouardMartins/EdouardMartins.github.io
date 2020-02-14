@@ -1,0 +1,43 @@
+@media screen and (max-width: 1024px) {
+    #menu a {
+        line-height: 50px;
+        width: 100%;
+        border-top-width: 0px;
+    }
+    .fleche {
+        display: none;
+    }
+    #text-slider {
+        color: black;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        left: 0px;
+        /* width: 100%;
+        position: initial;
+        top: 0%;
+        left: 0%; */
+    }
+    #slider {
+        margin: auto;
+        padding: auto;
+    }
+    .mac {
+        margin: auto;
+    }
+    #container2 {
+        padding: 100px;
+    }
+    #text-slider p {
+        padding: 10px;
+    }
+    #text-slider p a {
+        text-align: center;
+        display: block;
+        width: 150px;
+        margin: auto;
+    }
+    #services {
+        margin-top: 0px;
+    }
+}

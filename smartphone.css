@@ -1,0 +1,90 @@
+@media screen and (max-width: 640px) {
+    #menu a {
+        line-height: 50px;
+        width: 100%;
+        border-top-width: 0px;
+    }
+    input[type="checkbox"]+label:before {
+        font-family: FontAwesome;
+        font-size: 30px;
+        margin-left: 10px;
+        position: absolute;
+        left: 0px;
+    }
+    input[type="checkbox"]:not(:checked)+label:before {
+        content: "\f0c9";
+    }
+    input[type="checkbox"]:checked+label:before {
+        content: "\f00d";
+    }
+    input[type="checkbox"]:not(:checked)~#navmenu #menu {
+        display: none;
+    }
+    input[type="checkbox"]:checked~#navmenu #menu {
+        display: flex;
+    }
+    #slider {
+        background-image: none;
+    }
+    .fleche {
+        display: none;
+    }
+    #text-slider {
+        position: initial;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+    }
+    #text-slider p {
+        padding: 10px;
+    }
+    #text-slider p a {
+        text-align: center;
+        display: block;
+        width: 150px;
+        margin: auto;
+    }
+    #services {
+        margin-top: 0px;
+    }
+    #menu {
+        display: flex;
+        flex-direction: column;
+    }
+    h1 {
+        max-width: 750px;
+        width: 100%;
+        text-align: center;
+    }
+    h2 {
+        max-width: 750px;
+    }
+    #mac img {
+        width: 100%;
+        height: auto;
+    }
+    #mac {
+        padding: 0px;
+    }
+    .menu-projects li {
+        font-size: 0.6em;
+        align-items: center;
+        justify-content: center;
+    }
+    iframe {
+        display: none;
+    }
+    #formulaire {
+        position: initial;
+        top: 0%;
+        right: 0%;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.75);
+        width: 100%;
+        text-align: left;
+        font-size: 1.5rem;
+    }
+    #navmenu {
+        flex-direction: column;
+    }
+}

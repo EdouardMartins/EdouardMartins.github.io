@@ -1,0 +1,422 @@
+    /* Police */
+    
+    @font-face {
+        font-family: 'Roboto';
+        src: url('fonts/Roboto-Regular.ttf');
+    }
+    
+    @font-face {
+        font-family: 'Roboto';
+        src: url('fonts/Roboto-Bold.ttf');
+        font-weight: bold;
+    }
+    /* Couleur */
+    
+     :root {
+        --blue-color: rgb(85, 183, 201);
+        /* var(--blue-color) */
+    }
+    /* Commun */
+    
+    body,
+    html {
+        height: 100%;
+        margin: auto;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    section {
+        width: 100%;
+    }
+    
+    .circle {
+        border-radius: 50%;
+    }
+    /* Menu */
+    
+    #logo {
+        margin-left: 250px;
+        height: 50px;
+    }
+    
+    #top-header {
+        top: 0;
+        height: 100px;
+        z-index: 1000;
+        background-color: white;
+        width: 100%;
+        display: flex;
+        position: fixed;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #menu {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        height: 100px;
+        right: 250px;
+        position: relative;
+    }
+    
+    #menu a {
+        text-decoration: none;
+        color: #555555;
+        padding-left: 18px;
+        padding-right: 18px;
+        margin-left: -18px;
+        margin-right: -18px;
+        font-size: 1.1em;
+        display: inline-block;
+        line-height: 100px;
+        border-top-color: white;
+        border-top-style: solid;
+        border-width: 3px;
+    }
+    
+    #menu li {
+        margin: auto;
+        list-style-type: none;
+        font-size: 1em;
+        /* Doublon avec a */
+        vertical-align: middle;
+        padding: 0px 15px;
+        color: black;
+        display: flex;
+    }
+    
+    #menu li :hover {
+        border-top-color: var(--blue-color);
+    }
+    /* Slider */
+    
+    h1 {
+        font-size: 250%;
+        margin-bottom: 10px;
+    }
+    
+    #text-slider {
+        position: absolute;
+        top: 40%;
+        left: 15%;
+        color: white;
+        font-size: 1.2em;
+        width: 30%;
+    }
+    
+    #text-slider p {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-size: 1em;
+    }
+    
+    #text-slider a {
+        background-color: var(--blue-color);
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 0.9em;
+    }
+    
+    .blue {
+        color: var(--blue-color);
+    }
+    
+    #slider {
+        background-image: url('images/slider/bg1.jpg');
+        top: 80px;
+        position: relative;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        height: 75%;
+    }
+    
+    .fleche {
+        height: 80px;
+        background-color: black;
+        top: 50%;
+        width: 40px;
+        position: absolute;
+        opacity: 0.30;
+        justify-content: space-between;
+        cursor: pointer;
+        color: white;
+        font-weight: bold;
+    }
+    
+    .fleche i {
+        position: absolute;
+        top: 20px;
+    }
+    
+    #fleche-gauche {
+        transform: translateX(-25px);
+        border-radius: 0 40px 40px 0;
+        left: 25px;
+    }
+    
+    #fleche-gauche i {
+        left: 10px;
+    }
+    
+    #fleche-droite i {
+        right: 10px;
+    }
+    
+    #fleche-droite {
+        transform: translateX(25px);
+        right: 25px;
+        border-radius: 40px 0 0 40px;
+    }
+    /* Services */
+    
+    .text-center {
+        text-align: center;
+    }
+    
+    h2 {
+        display: block;
+        font-size: 3em;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .service-description h3 {
+        text-align: left;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    #services {
+        display: flex;
+        flex-direction: column;
+        margin-top: 150px;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .block-line {
+        width: 100%;
+    }
+    
+    .block-line hr {
+        width: 100px;
+        display: inline-block;
+        border: 1px solid gray;
+        opacity: 0.2;
+    }
+    
+    .circle-menu {
+        background-color: var(--blue-color);
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+    }
+    
+    #mac {
+        padding-left: 10%;
+        margin-top: 60px;
+    }
+    
+    .service-icon {
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+        margin-right: 20px;
+    }
+    
+    .service-icon i {
+        color: var(--blue-color);
+        font-size: 30px;
+        line-height: 50px;
+        text-align: center;
+        display: inline-block;
+        width: 50px;
+    }
+    
+    .service-element {
+        display: flex;
+        margin-bottom: 30px;
+    }
+    
+    .small-circle {
+        width: 10px;
+        height: 10px;
+        top: -32px;
+        left: 47px;
+        background-color: var(--blue-color);
+        position: relative;
+        border: 4px solid white;
+    }
+    /* Portfolio */
+    
+    #projects {
+        background-color: #F5F5F5
+    }
+    
+    .menu-projects {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        justify-content: center;
+        flex-direction: row;
+    }
+    
+    .menu-projects a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .menu-projects li {
+        padding: 15px 20px 15px 20px;
+        background-color: #E5E5E5;
+        border-bottom: 5px solid #E5E5E5;
+        position: relative;
+    }
+    
+    .img-thumbnail {
+        text-align: center;
+    }
+    
+    .img-thumbnail img {
+        height: 200px;
+        width: 300px;
+    }
+    
+    .menu-projects li:last-child {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    
+    .menu-projects li:first-child {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    
+    .menu-projects li:hover {
+        background-color: rgb(85, 183, 201);
+        border-bottom: 5px solid #468CAD;
+    }
+    
+    .menu-projects li:hover::after {
+        content: "";
+        position: absolute;
+        top: 54px;
+        left: 45px;
+        border-top: 8px solid #468CAD;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+    }
+    
+    .menu-projects li:hover a {
+        color: white;
+    }
+    
+    #img-projects {
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    figcaption {
+        background-color: rgba(0, 0, 0, 0.7);
+        bottom: 4px;
+        width: 100%;
+        position: absolute;
+        visibility: hidden;
+        color: white;
+        line-height: 2px;
+    }
+    
+    figure {
+        position: relative;
+    }
+    
+    figure:hover figcaption {
+        visibility: visible;
+    }
+    
+    .fig-circle {
+        width: 50px;
+        height: 50px;
+        top: -20px;
+        left: 230px;
+        background-color: rgb(85, 183, 201);
+        position: absolute;
+        line-height: 50px;
+        border: 2px solid white;
+    }
+    
+    .fig-text {
+        text-align: left;
+        margin-left: 15px;
+        margin-bottom: 25px;
+    }
+    /* Google Map */
+    
+    .google-map {
+        margin-top: 75px;
+        margin: 30px 0 30px 0;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .google-map iframe {
+        width: 100%;
+        height: 768px;
+        border: 0px;
+    }
+    
+    .text-contact {
+        font-size: 1.5em;
+        margin: 0;
+        text-align: left;
+    }
+    
+    #formulaire {
+        position: absolute;
+        top: 10%;
+        right: 10%;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.75);
+        width: 320px;
+        z-index: 100;
+        text-align: left;
+        font-size: 1.5rem;
+    }
+    
+    #formulaire input[type="text"],
+    #formulaire input[type="email"] {
+        font-size: 1.5rem;
+        padding: 5px 10px;
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+    
+    #formulaire textarea {
+        height: 100px;
+        width: 100%;
+        font-size: 1.5rem;
+        font-family: Roboto, sans-serif;
+        padding: 5px 10px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+    
+    .bouton {
+        padding: 10px;
+        background-color: #5CADD3;
+        color: #fff;
+        border-radius: 5px;
+    }
