@@ -13,18 +13,19 @@
         margin-right: auto;
         width: 100%;
         left: 0px;
+        top: auto;
     }
     #slider {
         margin: auto;
+        height: 600px;
     }
-    .mac {
-        margin: auto;
-    }
-    #container2 {
-        padding: 100px;
+    #mac {
+        margin: 0 auto;
+        margin-top: 50px;
     }
     #text-slider p {
         padding: 10px;
+        text-align: center;
     }
     #text-slider p a {
         text-align: center;
@@ -34,5 +35,14 @@
     }
     #services {
         margin-top: 0px;
+    }
+    h1 {
+        text-align: center;
+    }
+    h2 {
+        margin-top: 70px;
+    }
+    .container1 {
+        margin-left: 10px;
     }
 }

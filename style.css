@@ -34,6 +34,7 @@ html {
     vertical-align: middle;
     margin-bottom: auto;
     margin-top: auto;
+    margin-left: 50px;
 }
 
 #top-header {
@@ -56,6 +57,7 @@ html {
     align-items: center;
     height: auto;
     position: relative;
+    margin-right: 50px;
 }
 
 #menu a {
@@ -87,26 +89,33 @@ html {
     border-top-color: rgb(85, 183, 201);
 }
 
+:target {
+    display: block;
+    position: relative;
+    top: -135px;
+    visibility: hidden;
+}
+
 
 /***** Slider ******/
 
 h1 {
-    font-size: 250%;
+    font-size: 200%;
     margin-bottom: 10px;
+}
+
+#text-slider {
+    position: absolute;
+    top: 30vh;
+    left: 15vw;
+    color: white;
+    font-size: 1.2em;
+    width: 33%;
 }
 
 #text-slider p {
     display: block;
     font-size: 1em;
-}
-
-#text-slider {
-    position: absolute;
-    top: 40%;
-    left: 15%;
-    color: white;
-    font-size: 1.2em;
-    width: 30%;
 }
 
 #text-slider p a {
@@ -118,18 +127,23 @@ h1 {
     font-size: 0.9em;
 }
 
+#photo-principale {
+    width: 100%;
+}
+
 .blue {
     color: rgb(85, 183, 201);
 }
 
 #slider {
-    background-image: url('images/slider/bg1.jpg');
     top: 80px;
     position: relative;
-    width: 100%;
     background-repeat: no-repeat;
     background-size: 100% auto;
-    height: 75%;
+}
+
+div#slider {
+    width: auto;
 }
 
 .feature-slider {
@@ -228,8 +242,8 @@ h2 {
 }
 
 #mac {
-    padding-left: 10%;
-    margin-top: 60px;
+    padding: 0px;
+    margin-top: 35px;
 }
 
 .container1 {
@@ -241,7 +255,7 @@ h2 {
 .container2 {
     display: flex;
     flex-direction: column;
-    margin-top: 70px;
+    margin-top: auto;
 }
 
 .service-icon {
@@ -287,7 +301,7 @@ h2 {
 /********** 3 **********/
 
 
-/***** Portofolio ******/
+/***** Portfolio ******/
 
 .text-center-projects {
     text-align: center;
@@ -300,6 +314,7 @@ h2 {
     list-style: none;
     justify-content: center;
     flex-direction: row;
+    padding: 5px;
 }
 
 .menu-projects a {
@@ -310,7 +325,7 @@ h2 {
 .menu-projects li {
     padding: 15px 20px 15px 20px;
     background-color: #E5E5E5;
-    border-bottom: 5px solid #E5E5E5;
+    border-bottom: 5px solid #E5E5E4;
     position: relative;
 }
 
@@ -333,12 +348,14 @@ h2 {
     border-bottom-left-radius: 10px;
 }
 
-.menu-projects li:hover {
-    background-color: rgb(85, 183, 201);
-    border-bottom: 5px solid #468CAD;
+.menu-projects li:hover,
+.menu-active {
+    background-color: rgb(85, 183, 201) !important;
+    border-bottom: 5px solid #468CAD !important;
 }
 
-.menu-projects li:hover::after {
+.menu-projects li:hover::after,
+.menu-active::after {
     content: "";
     position: absolute;
     top: 54px;
@@ -348,7 +365,8 @@ h2 {
     border-right: 8px solid transparent;
 }
 
-.menu-projects li:hover a {
+.menu-projects li:hover a,
+.menu-active a {
     color: white;
 }
 
@@ -358,6 +376,8 @@ h2 {
     justify-content: center;
     display: flex;
     flex-direction: row;
+    margin: auto;
+    padding: 15px;
 }
 
 figcaption {
@@ -406,12 +426,18 @@ figure:hover figcaption {
     margin-top: 75px;
     margin: 30px 0 30px 0;
     position: relative;
+    background-color: #98C7F0;
+}
+
+.google-map :hover {
+    opacity: 1;
 }
 
 .google-map iframe {
     width: 100%;
     height: 768px;
     border: 0px;
+    opacity: 0.6;
 }
 
 .text-contact {

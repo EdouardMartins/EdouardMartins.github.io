@@ -5,24 +5,23 @@
     <meta charset="UTF-8">
     <title>WebAgency : L'agence de tous vos projets !</title>
     <meta name="description" content="WebAgency vous accompagne dans tous vos projets web: Conception, Design & Developpement." />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--- Fonts --->
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 
-    <!--- CSS --->
+    <!-- CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="tablette.css" />
     <link rel="stylesheet" href="smartphone.css" />
 
-    <!---***** Icons *****--->
+    <!--***** Icons *****-->
     <link rel="icon" href="images/icon/favicon.ico" />
 </head>
 
 <body>
 
-    <!---***** Menu *****--->
+    <!--***** Menu *****-->
     <header>
         <div id="top-header">
             <nav>
@@ -31,33 +30,39 @@
                 <div id="navmenu">
                     <img id="logo" src="images/logo.png" alt="logo" />
                     <ul id="menu">
-                        <li class="active"><a href="#slider">Accueil</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#projects">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li class="active"><a href="#slider-anchor">Accueil</a></li>
+                        <li><a href="#services-anchor">Services</a></li>
+                        <li><a href="#projects-anchor">Portfolio</a></li>
+                        <li><a href="#contact-anchor">Contact</a></li>
                     </ul>
                 </div>
             </nav>
         </div>
     </header>
 
-    <!---***** Slider *****--->
+    <!--***** Slider *****-->
 
     <div id="slider">
+        <a id="slider-anchor"></a>
+
+        <img id="photo-principale" src="images/slider/bg1.jpg" alt="photo principale">
+        <!-- <img src="images/slider/bg2.jpg" alt="photo secondaire"> -->
+
         <div id="text-slider">
             <h1><span class="blue">WEBAGENCY</span>: L'AGENCE DE TOUS VOS PROJETS !</h1>
             <p>Vous avez un projet web? La WebAgency vous aide à le réaliser !</p>
-            <p><a href="#services">Plus d'infos</a></p>
+            <p><a href="#services-anchor">Plus d'infos</a></p>
         </div>
+
+        <div id="fleche-gauche" class="fleche"><i class="fa fa-angle-left fa-2x" aria-hidden="true"></i></div>
+        <div id="fleche-droite" class="fleche"><i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></div>
+        <div id="feature-slider"></div>
     </div>
 
-    <div id="fleche-gauche" class="fleche"><i class="fa fa-angle-left fa-2x" aria-hidden="true"></i></div>
-    <div id="fleche-droite" class="fleche"><i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></div>
-    <div id="feature-slider"></div>
-
-    <!---***** Services *****--->
+    <!--***** Services *****-->
 
     <section id="services">
+        <a id="services-anchor"></a>
         <h2>NOS SERVICES</h2>
 
         <div class="block-line">
@@ -110,160 +115,152 @@
         </div>
     </section>
 
-    <!---***** Nos Projets *****--->
+    <!--***** Nos Projets *****-->
 
-    <section>
-        <div id="projects">
-            <h2>NOS PROJETS</h2>
+    <section id="projects">
+        <a id="projects-anchor"></a>
+        <h2>NOS PROJETS</h2>
 
-            <div class="block-line">
-                <hr />
-                <div class="circle-menu"></div>
-                <hr />
-            </div>
+        <div class="block-line">
+            <hr />
+            <div class="circle-menu"></div>
+            <hr />
+        </div>
 
-            <p class="text-center-projects">Vous pouvez consulter quelques-unes de nos créations ci-dessous</p>
+        <p class="text-center-projects">Vous pouvez consulter quelques-unes de nos créations ci-dessous</p>
 
-            <ul class="menu-projects">
-                <li><a href="#works">All Works</a></li>
-                <li><a href="#creative">Creative</a></li>
-                <li><a href="#corporate">Corporate</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-            </ul>
+        <ul class="menu-projects">
+            <li class="menu-active"><a href="#works">All Works</a></li>
+            <li><a href="#creative">Creative</a></li>
+            <li><a href="#corporate">Corporate</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+        </ul>
 
-            <div id="img-projects">
-                <figure class="img-thumbnail">
-                    <img src="images/portfolio/01.jpg" alt="image 1" />
-                    <figcaption>
-                        <div class="fig-circle">
-                            <i class="fa fa-eye" aria-hidden="true"></i>
-                        </div>
-                        <div class="fig-text">
-                            <h3>Eyebrows n glasses</h3>
-                            <p>Exemple d'illustration</p>
-                        </div>
-                    </figcaption>
-                </figure>
+        <div id="img-projects">
+            <figure class="img-thumbnail">
+                <img src="images/portfolio/01.jpg" alt="image 1" />
+                <figcaption>
+                    <div class="fig-circle">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+                    <div class="fig-text">
+                        <h3>Eyebrows n glasses</h3>
+                        <p>Exemple d'illustration</p>
+                    </div>
+                </figcaption>
+            </figure>
 
-                <figure class="img-thumbnail">
-                    <img src="images/portfolio/02.jpg" alt="image 2" />
-                    <figcaption>
-                        <div class="fig-circle">
-                            <i class="fa fa-eye" aria-hidden="true"></i>
-                        </div>
-                        <div class="fig-text">
-                            <h3>Pink rabbit</h3>
-                            <p>Création originale</p>
-                        </div>
-                    </figcaption>
-                </figure>
+            <figure class="img-thumbnail">
+                <img src="images/portfolio/02.jpg" alt="image 2" />
+                <figcaption>
+                    <div class="fig-circle">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+                    <div class="fig-text">
+                        <h3>Pink rabbit</h3>
+                        <p>Création originale</p>
+                    </div>
+                </figcaption>
+            </figure>
 
-                <figure class="img-thumbnail">
-                    <img src="images/portfolio/03.jpg" alt="image 3" />
-                    <figcaption>
-                        <div class="fig-circle">
-                            <i class="fa fa-eye" aria-hidden="true"></i>
-                        </div>
-                        <div class="fig-text">
-                            <h3>Original Pompadour</h3>
-                            <p>Création de logo</p>
-                        </div>
-                    </figcaption>
-                </figure>
+            <figure class="img-thumbnail">
+                <img src="images/portfolio/03.jpg" alt="image 3" />
+                <figcaption>
+                    <div class="fig-circle">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+                    <div class="fig-text">
+                        <h3>Original Pompadour</h3>
+                        <p>Création de logo</p>
+                    </div>
+                </figcaption>
+            </figure>
 
-                <figure class="img-thumbnail">
-                    <img src="images/portfolio/04.jpg" alt="image 4" />
-                    <figcaption>
-                        <div class="fig-circle">
-                            <i class="fa fa-eye" aria-hidden="true"></i>
-                        </div>
-                        <div class="fig-text">
-                            <h3>Paper work</h3>
-                            <p>Illustration 3D</p>
-                        </div>
-                    </figcaption>
-                </figure>
+            <figure class="img-thumbnail">
+                <img src="images/portfolio/04.jpg" alt="image 4" />
+                <figcaption>
+                    <div class="fig-circle">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+                    <div class="fig-text">
+                        <h3>Paper work</h3>
+                        <p>Illustration 3D</p>
+                    </div>
+                </figcaption>
+            </figure>
 
-                <figure class="img-thumbnail">
-                    <img src="images/portfolio/05.jpg" alt="image 5" />
-                    <figcaption>
-                        <div class="fig-circle">
-                            <i class="fa fa-eye" aria-hidden="true"></i>
-                        </div>
-                        <div class="fig-text">
-                            <h3>Shopping bag illustred</h3>
-                            <p>Exemple de design</p>
-                        </div>
-                    </figcaption>
-                </figure>
+            <figure class="img-thumbnail">
+                <img src="images/portfolio/05.jpg" alt="image 5" />
+                <figcaption>
+                    <div class="fig-circle">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+                    <div class="fig-text">
+                        <h3>Shopping bag illustred</h3>
+                        <p>Exemple de design</p>
+                    </div>
+                </figcaption>
+            </figure>
 
-                <figure class="img-thumbnail">
-                    <img src="images/portfolio/06.jpg" alt="image 6" />
-                    <figcaption>
-                        <div class="fig-circle">
-                            <i class="fa fa-eye" aria-hidden="true"></i>
-                        </div>
-                        <div class="fig-text">
-                            <h3>Modern city</h3>
-                            <p>Création originale</p>
-                        </div>
-                    </figcaption>
-                </figure>
+            <figure class="img-thumbnail">
+                <img src="images/portfolio/06.jpg" alt="image 6" />
+                <figcaption>
+                    <div class="fig-circle">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+                    <div class="fig-text">
+                        <h3>Modern city</h3>
+                        <p>Création originale</p>
+                    </div>
+                </figcaption>
+            </figure>
 
-                <figure class="img-thumbnail">
-                    <img src="images/portfolio/07.jpg" alt="image 7" />
-                    <figcaption>
-                        <div class="fig-circle">
-                            <i class="fa fa-eye" aria-hidden="true"></i>
-                        </div>
-                        <div class="fig-text">
-                            <h3>Rocket on tv</h3>
-                            <p>Exemple de logo</p>
-                        </div>
-                    </figcaption>
-                </figure>
+            <figure class="img-thumbnail">
+                <img src="images/portfolio/07.jpg" alt="image 7" />
+                <figcaption>
+                    <div class="fig-circle">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+                    <div class="fig-text">
+                        <h3>Rocket on tv</h3>
+                        <p>Exemple de logo</p>
+                    </div>
+                </figcaption>
+            </figure>
 
-                <figure class="img-thumbnail">
-                    <img src="images/portfolio/08.jpg" alt="image 8" />
-                    <figcaption>
-                        <div class="fig-circle">
-                            <i class="fa fa-eye" aria-hidden="true"></i>
-                        </div>
-                        <div class="fig-text">
-                            <h3>Material work</h3>
-                            <p>Création 3D</p>
-                        </div>
-                    </figcaption>
-                </figure>
-
-                <figure class="img-thumbnail">
-                    <img src="images/portfolio/full.jpg" alt="image 9" />
-                    <figcaption>
-                        <div class="fig-circle">
-                            <i class="fa fa-eye" aria-hidden="true"></i>
-                        </div>
-                        <div class="fig-text">
-                            <h3>Burger</h3>
-                            <p>Exemple d'illustration</p>
-                        </div>
-                    </figcaption>
-                </figure>
-
-            </div>
-
+            <figure class="img-thumbnail">
+                <img src="images/portfolio/08.jpg" alt="image 8" />
+                <figcaption>
+                    <div class="fig-circle">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+                    <div class="fig-text">
+                        <h3>Material work</h3>
+                        <p>Création 3D</p>
+                    </div>
+                </figcaption>
+            </figure>
         </div>
     </section>
 
-    <!--- Contacts --->
+    <!-- Contacts -->
 
     <div class="contact" id="contact">
+        <a id="contact-anchor"></a>
         <div class="google-map">
             <iframe sandbox="allow-scripts" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.2156022977674!2d2.3476356154983815!3d48.873166307620465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145cb52f15%3A0x4d3ec41b2cadff0!2s25+Rue+d'Hauteville%2C+75010+Paris%2C+France!5e0!3m2!1sfr!2sus!4v1481372235333"></iframe>
 
             <form id="formulaire" action="#" method="GET">
+                <h2 class="text-contact">Nous contacter</h2>
+                <address>
+                    <p>
+                        <strong>WebAgency SAS</strong><br/>
+                        25 rue d'Hauteville <br/>
+                        75010 Paris<br/>
+                        Tel : 01 02 03 04 05
+                    </p>
+                </address>
                 <p>
-                    <h2 class="text-contact">Nous contacter</h2>
-                    <b>WebAgency SAS</b><br/> 25 rue d'Hauteville <br/> 75010 Paris<br/> Tel : 01 02 03 04 05 <br/>
                     <input type="text" name="name" id="name" placeholder="Nom" title="votre nom" />
                     <input type="email" name="email" id="email" placeholder="Email" title="votre email" />
                     <input type="text" name="subject" id="subject" placeholder="Sujet" title="sujet" />

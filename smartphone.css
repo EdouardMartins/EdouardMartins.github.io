@@ -7,7 +7,8 @@
     input[type="checkbox"]+label:before {
         font-family: FontAwesome;
         font-size: 30px;
-        margin-left: 10px;
+        margin-left: 15px;
+        margin-top: 15px;
         position: absolute;
         left: 0px;
     }
@@ -23,8 +24,8 @@
     input[type="checkbox"]:checked~#navmenu #menu {
         display: flex;
     }
-    #slider {
-        background-image: none;
+    #slider figure {
+        display: none;
     }
     .fleche {
         display: none;
@@ -38,18 +39,31 @@
     #text-slider p {
         padding: 10px;
     }
+    #slider {
+        height: 350px;
+    }
     #text-slider p a {
         text-align: center;
         display: block;
         width: 150px;
         margin: auto;
     }
+    #photo-principale {
+        display: none;
+    }
+    #logo {
+        margin-top: 5px;
+        margin-right: 40px;
+    }
     #services {
-        margin-top: 0px;
+        margin-top: 35px;
     }
     #menu {
         display: flex;
         flex-direction: column;
+    }
+    p {
+        text-align: center;
     }
     h1 {
         max-width: 750px;
@@ -66,10 +80,20 @@
     #mac {
         padding: 0px;
     }
+    .menu-projects {
+        margin-right: auto;
+        margin-left: auto;
+        padding: 5px;
+    }
     .menu-projects li {
         font-size: 0.6em;
         align-items: center;
         justify-content: center;
+    }
+    .menu-projects li:hover::after,
+    .menu-active::after {
+        top: 45px;
+        left: 35px;
     }
     iframe {
         display: none;
@@ -80,7 +104,6 @@
         right: 0%;
         padding: 20px;
         background-color: rgba(255, 255, 255, 0.75);
-        width: 100%;
         text-align: left;
         font-size: 1.5rem;
     }
